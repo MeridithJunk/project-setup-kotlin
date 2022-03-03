@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   say-hello:
     docker:
-      - image: cimg/base:stable
+      - image: circleci/openjdk:8-jdk
     steps:
       - checkout
       - run: echo "this is the build job"
